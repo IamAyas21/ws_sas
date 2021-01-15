@@ -6,17 +6,17 @@ using WS_SAS.Models;
 
 namespace WS_SAS.Parse
 {
-    public class ResponseCashFlow
+    public class ResponseClass1
     {
         public string status { get; set; }
         public string message { get; set; }
-        public List<CashFlowHeaderModels> Data { get; set; }
+        public List<Class1> Data { get; set; }
     }
 
-    public class ResponseCashFlowDetail
+    public class ResponseClass3
     {
         public string status { get; set; }
         public string message { get; set; }
-        public List<CashFlowDetailModels> Data { get; set; }
+        public List<Class3> Data { get; set; }
     }
 }

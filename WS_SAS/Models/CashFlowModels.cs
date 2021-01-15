@@ -12,15 +12,27 @@ namespace WS_SAS.Models
         public string D { get; set; }
     }
 
-    public class CashFlowModels
+    public class CashFlowHeaderModels
     {
         public string Group { get; set; }
         public string Group2 { get; set; }
         public string ACC { get; set; }
+       
+        public string Sum { get; set; }
+        public int SortId { get; set; }
+        public List<CashFlowDetailModels> Data { get; set; }
+    }
+
+    public class CashFlowDetailModels
+    {
         public string Name { get; set; }
         public string Name2 { get; set; }
         public string Value { get; set; }
-        public string Sum { get; set; }
-        public int SortId { get; set; }
+    }
+    public class ParamCashFlow
+    {
+        public string userId { get; set; }
+        public DateTime startDate { get; set; }
+        public DateTime endDate { get; set; }
     }
 }

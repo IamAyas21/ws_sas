@@ -12,7 +12,7 @@ namespace WS_SAS.Logic
     {
         public static SqlConnection GetConnection()
         {
-            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString);
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["WS_SAS_Connection"].ConnectionString);
             return conn;
         }
         public static DataTable ExcuteQuery(string Query)
