@@ -209,6 +209,7 @@
     <Compile Include="Controllers\CashFlowController.cs" />
     <Compile Include="Controllers\DashboardController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NeracaController.cs" />
     <Compile Include="Controllers\ProfitLossController.cs" />
     <Compile Include="Controllers\REBController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
@@ -221,10 +222,12 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\CashFlowModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\NeracaViewModels.cs" />
     <Compile Include="Models\ProfitLossViewModels.cs" />
     <Compile Include="Models\REBViewModels.cs" />
     <Compile Include="Parse\ResponseDashboardCashFlow.cs" />
     <Compile Include="Parse\ResponseCashFlow.cs" />
+    <Compile Include="Parse\ResponseNeraca.cs" />
     <Compile Include="Parse\ResponseProfitLoss.cs" />
     <Compile Include="Parse\ResponseREB.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -94,16 +94,17 @@ namespace WS_SAS.Controllers
                             strClass3 = dt.Rows[i]["bClassName"].ToString();
                             class3.TitleId = dt.Rows[i]["bClassName"].ToString();
                             class3.TitleEg = dt.Rows[i]["bClassName2"].ToString();
+                            class3.Amount = dt.Rows[i]["ValueClass2"].ToString();
 
                             class3.Data = listClass2;
                             listClass3.Add(class3);
 
-                            class2 = new Class2();
-                            class2.ClassId = dt.Rows[i]["cClassId"].ToString();
-                            class2.TitleId = "Jumlah " + dt.Rows[i]["bClassName"].ToString();
-                            class2.TitleEg = "Jumlah " + dt.Rows[i]["bClassName2"].ToString();
-                            class2.Amount = dt.Rows[i]["ValueClass2"].ToString();
-                            listClass2.Add(class2);
+                            //class2 = new Class2();
+                            //class2.ClassId = dt.Rows[i]["cClassId"].ToString();
+                            //class2.TitleId = "Jumlah " + dt.Rows[i]["bClassName"].ToString();
+                            //class2.TitleEg = "Jumlah " + dt.Rows[i]["bClassName2"].ToString();
+                            //class2.Amount = dt.Rows[i]["ValueClass2"].ToString();
+                            //listClass2.Add(class2);
                         }
 
                         if (model.classId == dt.Rows[i]["aClassId"].ToString() && strClass2 != dt.Rows[i]["cClassName"].ToString())
@@ -167,15 +168,16 @@ namespace WS_SAS.Controllers
                             strClass3 = dt.Rows[i]["cClassName"].ToString();
                             class3.TitleId = dt.Rows[i]["cClassName"].ToString();
                             class3.TitleEg = dt.Rows[i]["cClassName2"].ToString();
+                            class3.Amount = dt.Rows[i]["ValueClass3"].ToString();
 
                             class3.Data = listClass2;
                             listClass3.Add(class3);
 
-                            class2 = new Class2();
-                            class2.TitleId = "Jumlah " + dt.Rows[i]["CoaName"].ToString();
-                            class2.TitleEg = "Jumlah " + dt.Rows[i]["CoaName2"].ToString();
-                            class2.Amount = dt.Rows[i]["ValueClass3"].ToString();
-                            listClass2.Add(class2);
+                            //class2 = new Class2();
+                            //class2.TitleId = "Jumlah " + dt.Rows[i]["CoaName"].ToString();
+                            //class2.TitleEg = "Jumlah " + dt.Rows[i]["CoaName2"].ToString();
+                            //class2.Amount = dt.Rows[i]["ValueClass3"].ToString();
+                            //listClass2.Add(class2);
                         }
 
                         if (model.classId == dt.Rows[i]["cClassId"].ToString() && strClass2 != dt.Rows[i]["CoaName"].ToString())
