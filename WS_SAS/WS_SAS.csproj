@@ -212,6 +212,7 @@
     <Compile Include="Controllers\NeracaController.cs" />
     <Compile Include="Controllers\ProfitLossController.cs" />
     <Compile Include="Controllers\REBController.cs" />
+    <Compile Include="Controllers\TrialBalanceController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -225,6 +226,8 @@
     <Compile Include="Models\NeracaViewModels.cs" />
     <Compile Include="Models\ProfitLossViewModels.cs" />
     <Compile Include="Models\REBViewModels.cs" />
+    <Compile Include="Models\TrialBalanceViewModels.cs" />
+    <Compile Include="Parse\ResponseTrialBalance.cs" />
     <Compile Include="Parse\ResponseDashboardCashFlow.cs" />
     <Compile Include="Parse\ResponseCashFlow.cs" />
     <Compile Include="Parse\ResponseNeraca.cs" />
