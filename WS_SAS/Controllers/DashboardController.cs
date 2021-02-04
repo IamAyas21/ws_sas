@@ -15,15 +15,15 @@ namespace WS_SAS.Controllers
     [RoutePrefix("api/Dashboard")]
     public class DashboardController : ApiController
     {
-        [HttpGet]
+        [HttpPost]
         [Route("ChartCashFlow")]
-        public ResponseDashboardCashFlow ChartCashFlow(string userId, string year)
+        public ResponseDashboardCashFlow ChartCashFlow(ParamCashFlowChart model)
         {
             List<CashFlowDashboardModels> listReport = new List<CashFlowDashboardModels>();
 
             try
             {
-                DataTable dt = Common.ExcuteQuery(string.Format("exec RPT_CASH_FLOW_SP '{0}','{1}'", userId, year));
+                DataTable dt = Common.ExcuteQuery(string.Format("exec RPT_CASH_FLOW_SP '{0}','{1}'", model.userId, model.year));
 
                 for (int i = 0; i < dt.Rows.Count; i++)
                 {

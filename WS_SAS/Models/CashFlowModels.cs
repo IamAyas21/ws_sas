@@ -35,4 +35,10 @@ namespace WS_SAS.Models
         public DateTime startDate { get; set; }
         public DateTime endDate { get; set; }
     }
+
+    public class ParamCashFlowChart
+    {
+        public string userId { get; set; }
+        public string year { get; set; }
+    }
 }
