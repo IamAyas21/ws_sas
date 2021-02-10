@@ -223,6 +223,7 @@
     <Compile Include="Logic\Log.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\BankBalanceViewModels.cs" />
     <Compile Include="Models\CashFlowModels.cs" />
     <Compile Include="Models\COAViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -231,6 +232,7 @@
     <Compile Include="Models\ProfitLossViewModels.cs" />
     <Compile Include="Models\REBViewModels.cs" />
     <Compile Include="Models\TrialBalanceViewModels.cs" />
+    <Compile Include="Parse\ResponseBankBalance.cs" />
     <Compile Include="Parse\ResponseCOA.cs" />
     <Compile Include="Parse\ResponseLedger.cs" />
     <Compile Include="Parse\ResponseTrialBalance.cs" />

@@ -19,4 +19,11 @@ namespace WS_SAS.Parse
         public string message { get; set; }
         public List<Class3> Data { get; set; }
     }
+
+    public class ResponseChartProfitLoss
+    {
+        public string status { get; set; }
+        public string message { get; set; }
+        public List<ChartProfitLos> Data { get; set; }
+    }
 }

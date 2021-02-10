@@ -43,4 +43,18 @@ namespace WS_SAS.Models
         public DateTime endDate { get; set; }
         public string classId { get; set; }
     }
+
+    public class ChartProfitLos
+    {
+        public string Month { get; set; }
+        public string Cost{ get; set; }
+        public string Income { get; set; }
+        public string Total { get; set; }
+    }
+
+    public class ParamProfitLossChart
+    {
+        public string userId { get; set; }
+        public string year { get; set; }
+    }
 }
